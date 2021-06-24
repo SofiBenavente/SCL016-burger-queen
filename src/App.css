@@ -1,9 +1,10 @@
 .App {
   /*text-align: center;*/
   display: flex;
-  background: url('./Images/fondo_bg.jpg');
+  /*background: url('./Images/fondo_bg.jpg');*/
   min-height: 100vh;
   flex-direction: column;
+  background: url('./Images/fondo_bg.jpg');
 }
 
 .App-logo {
