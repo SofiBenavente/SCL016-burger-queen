@@ -1,5 +1,9 @@
-import logo from './logo.svg';
+
+import React, {Fragment, useState} from 'react';
+import logo from './Images/Burger_logo.png';
+import 'bootswatch/dist/journal/bootstrap.min.css'; // Added this :boom:
 import './App.css';
+import Card from './Card';
 
 function App() {
   return (
@@ -7,16 +11,7 @@ function App() {
     <header className = 'header'>
     <img src={logo} className="App-logo" alt="logo" />
     </header>
-    <div className = 'menu'>
-     <nav>
-       <p>MENU</p>
-       <ul>
-         <li>Hamburguesas</li>
-         <li>Acompañamiento</li>
-         <li>Para tomar</li>
-       </ul>
-     </nav>
-     </div>
+    <Card/>
     </div>
   );
 }

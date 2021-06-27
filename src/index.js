@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'bootswatch/dist/journal/bootstrap.min.css'; // Added this :boom:
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
