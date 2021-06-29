@@ -1,0 +1,22 @@
+{
+    "arrayMenu":[{
+            "Hamburguesa": {
+                "Simple" : 10,
+                "Doble": 15,
+                "Italiana": 20
+            },
+            "Acompañamiento": {
+                "Papas fritas" : 4,
+                "Empanadas de queso": 6,
+                "Ensalada": 5  
+            },
+            "Bebidas": {
+                "Sprite" : 3,
+                "Coca-cola": 3,
+                "Fanta": 3,
+                "Cerveza": 4,
+                "Jugo": 2 
+            }
+        }
+    ]
+}

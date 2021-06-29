@@ -80,3 +80,6 @@ li {
   padding: 1rem;
 }
 
+.form-group{
+  display: flex;
+}
