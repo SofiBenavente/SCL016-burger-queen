@@ -1,6 +1,6 @@
 import React from 'react';
 
-function car() {
+function card () {
     return (
      
     <div className='container'>
@@ -17,14 +17,14 @@ function car() {
                 <input type="checkbox" className="btn-check" id="btncheck3" autocomplete="off"></input>
                 <label className="btn btn-primary" for="btncheck3">Para tomar</label>
               </div>
-              <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+
                 <div class="d-flex w-100 justify-content-between">
                   <h5 class="mb-1">List group item heading</h5>
                   <small class="text-muted">3 days ago</small>
                 </div>
                 <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
                 <small class="text-muted">Donec id elit non mi porta.</small>
-              </a>
+              
             </div>
           </div>
         </div>
@@ -41,14 +41,14 @@ function car() {
                 <input type="checkbox" className="btn-check" id="btncheck3" autocomplete="off"></input>
                 <label className="btn btn-primary" for="btncheck3">Para tomar</label>
               </div>
-              <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+
                 <div class="d-flex w-100 justify-content-between">
                   <h5 class="mb-1">List group item heading</h5>
                   <small class="text-muted">3 days ago</small>
                 </div>
                 <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
                 <small class="text-muted">Donec id elit non mi porta.</small>
-              </a>
+              
             </div>
           </div>
         </div>
