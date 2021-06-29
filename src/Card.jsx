@@ -1,6 +1,6 @@
 import React from 'react';
 
-function card() {
+function car() {
     return (
      
     <div className='container'>
@@ -28,6 +28,8 @@ function card() {
             </div>
           </div>
         </div>
+
+        {/* Tarjeta comanda*/}
         <div className='col-md-4'>
           <div class='cardTicket'>
             <div className="list-group">
