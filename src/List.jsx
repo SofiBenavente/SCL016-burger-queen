@@ -17,7 +17,7 @@ const List = () => {
             <ul>
                 {
                     food.map((item,index) => (
-                        <li key = {index}>{item.Hamburguesas}</li>
+                        <li key = {index}>{item[0]}</li>
                     ))
                 }
             </ul>
