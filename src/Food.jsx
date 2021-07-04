@@ -1,32 +1,34 @@
 import React from 'react'
+import {Menu} from './Menu.json'
+//let arrayMenu = require('./Menu.json');
 
 const Food = () => {
 
-    const [food, setFood] = React.useState([])
+
+    const [food, setFood] = React.useState(Menu)
+    //console.log(food)
 
     React.useEffect(() => {
-        fetchData()
+
+        setFood(food)
+        //fetchData()
     }, [])
 
-    const fetchData = async () => {
-        const data = await fetch('./Menu.json')
-        const foodList = await data.json()
-        console.log(foodList)
-        setFood(foodList)
-    }
-
-    return (
+    return ( 
         <div>
-            <h1>hamburguesitas</h1>
             <ul>
                 {
-                    food.map(item => (
-                        <li key={item.id}>
-                            {item.arrayMenu}
-                        </li>
+                food.map((item,i)=>(
+                    <li key={i}> 
+                        <p>{item.type}</p>
+                        <p>{item.prices}</p>
+                        <img src = {item.images} style={{height:70, width: 70}}/>
+                    </li>
                     ))
-                }
+                }               
+                
             </ul>
+
         </div>
     )
 }
