@@ -1,22 +1,64 @@
-{
-    "arrayMenu":[{
-            "Hamburguesa": {
-                "Simple" : 10,
-                "Doble": 15,
-                "Italiana": 20
-            },
-            "Acompañamiento": {
-                "Papas fritas" : 4,
-                "Empanadas de queso": 6,
-                "Ensalada": 5  
-            },
-            "Bebidas": {
-                "Sprite" : 3,
-                "Coca-cola": 3,
-                "Fanta": 3,
-                "Cerveza": 4,
-                "Jugo": 2 
-            }
+
+
+        {
+          "Menu": [
+              {
+                  "id": "1",
+                  "images": "https://s3.eu-central-1.amazonaws.com/www.burgerking.com.mx/wp-content/uploads/sites/3/2021/02/24093415/1200x800_01_HambuguesaDeCarne_kids-1-1.png",
+                  "name": "Hamburguesa Simple",
+                  "type": "Hamburguesas",
+                  "price": "10"
+              },
+              {
+                  "id": "2",
+                  "images": "",
+                  "name": "Hamburguesa Doble",
+                  "type": "Hamburguesas",
+                  "price": "15"
+              },
+              {
+                  "id": "3",
+                  "images": "",
+                  "name": "Papas Fritas",
+                  "type": "Acompañamiento",
+                  "price": "5"
+              },
+              {
+                  "id": "4",
+                  "images": "",
+                  "name": "Empanas de queso",
+                  "type": "Acompañamiento",
+                  "price": "7"
+              },
+              {    "id": "5",
+                  "images": "",
+                  "name": "Sprite",
+                  "type": "Bebidas",
+                  "price": "3"
+              },
+              {
+                  "id": "6",
+                  "images": "",
+                  "name": "Coca Cola",
+                  "type": "Bebidas",
+                  "price": "3"
+              },
+              {
+                  "id": "7",
+                  "images": "",
+                  "name": "Cerveza",
+                  "type": "Bebidas",
+                  "price": "4"
+              },
+              {
+                  "id": "8",
+                  "images": "",
+                  "name": "Jugo",
+                  "type": "Bebidas",
+                  "price": "2"
+              }
+          ]
         }
-    ]
-}
+
+
+            
