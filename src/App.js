@@ -3,7 +3,7 @@ import React from 'react';
 import logo from './Images/Burger_logo.png';
 import 'bootswatch/dist/journal/bootstrap.min.css'; // Added this :boom:
 import './App.css';
-import Card from './Card.jsx';
+import Card from './Components/Card.jsx';
 
 function App() {
   return (

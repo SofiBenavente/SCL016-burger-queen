@@ -1,6 +1,9 @@
 import React from 'react';
 //import List from './List.jsx';
-import Food from './Food.jsx'
+import Burger from './Burger'
+import Snack from './Snack'
+import Drinks from './Drinks'
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -43,13 +46,13 @@ const card = () => {
                 <div className="btn-group-vertical">
                   <Switch>
                     <Route path='/' exact>
-                      {/*<List/>*/}
+                      <Burger/>
                     </Route>
                     <Route path='/Acompañamiento'>
-                      <h1>papitas y cositas pa picar</h1>
+                    <Snack/>
                     </Route>
                     <Route path='/Bebidas'>
-                      <Food/>
+                      <Drinks/>
                     </Route>
                   </Switch>
 
