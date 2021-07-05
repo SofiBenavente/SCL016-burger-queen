@@ -11,48 +11,48 @@
               },
               {
                   "id": "2",
-                  "images": "",
+                  "images": "https://burgerkingec.com/wp-content/uploads/2020/05/Whopper-Doble-con-Queso.png",
                   "name": "Hamburguesa Doble",
                   "type": "Hamburguesas",
                   "price": "15"
               },
               {
                   "id": "3",
-                  "images": "",
+                  "images": "https://pngimg.com/uploads/fries/fries_PNG97888.png",
                   "name": "Papas Fritas",
                   "type": "Acompañamiento",
                   "price": "5"
               },
               {
                   "id": "4",
-                  "images": "",
+                  "images": "http://superm.cl/wp-content/uploads/2019/02/empanadas_new_cl.png",
                   "name": "Empanas de queso",
                   "type": "Acompañamiento",
                   "price": "7"
               },
               {    "id": "5",
-                  "images": "",
+                  "images": "http://pngimg.com/uploads/sprite/sprite_PNG98768.png",
                   "name": "Sprite",
                   "type": "Bebidas",
                   "price": "3"
               },
               {
                   "id": "6",
-                  "images": "",
+                  "images": "https://assets.stickpng.com/thumbs/580b57fbd9996e24bc43c0eb.png",
                   "name": "Coca Cola",
                   "type": "Bebidas",
                   "price": "3"
               },
               {
                   "id": "7",
-                  "images": "",
+                  "images": "https://static.wixstatic.com/media/2cd43b_dfb8b6de725449fbb8db9b8cfad0b51a~mv2.png/v1/fill/w_285,h_334,q_90/2cd43b_dfb8b6de725449fbb8db9b8cfad0b51a~mv2.png",
                   "name": "Cerveza",
                   "type": "Bebidas",
                   "price": "4"
               },
               {
                   "id": "8",
-                  "images": "",
+                  "images": "https://pngimg.com/uploads/juice/juice_PNG7156.png",
                   "name": "Jugo",
                   "type": "Bebidas",
                   "price": "2"

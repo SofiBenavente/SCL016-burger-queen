@@ -73,6 +73,8 @@ ul {
 
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 li {
@@ -82,4 +84,9 @@ li {
 
 .form-group{
   display: flex;
+}
+
+p {
+  text-align: center;
+  font-size: 30px;
 }
