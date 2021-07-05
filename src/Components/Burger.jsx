@@ -28,7 +28,7 @@ const Burger = () => {
             <ul>
                 {
                 burgerFood.map((item,i)=> (
-                    
+                     
                     <li key={i}>
                         <button className = "burgers" style={{height:400, width: 300}} onClick = {() => burgerBtnFood()}>
                         {<img src = {item.images} style={{height:200, width: 250}}/>}
