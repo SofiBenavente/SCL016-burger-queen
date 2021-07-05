@@ -1,3 +1,5 @@
+@media (min-width: 768px) {
+
 .App {
   /*text-align: center;*/
   display: flex;
@@ -93,4 +95,5 @@ p {
 
 p1 {
   font-size: 15px;
+}
 }
