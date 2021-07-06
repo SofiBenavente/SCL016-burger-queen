@@ -1,9 +1,10 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 //import List from './List.jsx';
 import Burger from './Burger'
 import Snack from './Snack'
 import Drinks from './Drinks'
 //import Order from './Order'
+
 
 import {
   BrowserRouter as Router,
@@ -13,9 +14,24 @@ import {
 } from "react-router-dom";
 
 
-const card = () => {
+const Card = () => {
 
+const [burgerTypeState, setBurgerTypeState] = useState();
+const [burgerPriceState, setBurgerPriceState] = useState();
+const [productList, setProductList] = useState([]);
+const [total, setTotal] = useState(0);
 
+/*useEffect(() => {
+  if (burgerTypeState != undefined && burgerPriceState != undefined) {
+    productList.push(burgerTypeState);
+    setTotal(total + burgerPriceState);
+    console.log(total);
+  }
+});*/
+
+const getTotal = () => {
+  return "suma de precios";
+}
 
     return (
      
@@ -37,7 +53,7 @@ const card = () => {
                   Acompañamiento
                   </Link>
                   
-                  <Link to='/Bebidas'className="btn btn-lg btn-primary bloc" type="button">
+                  <Link to='/Bebidas' className="btn btn-lg btn-primary bloc" type="button">
                   Bebidas
                   </Link>
 
@@ -47,7 +63,7 @@ const card = () => {
                 <div className="btn-group-vertical">
                   <Switch>
                     <Route path='/' exact>
-                      <Burger/>
+                      <Burger burgerTypeProp={setBurgerTypeState} burgerPriceProp={setBurgerPriceState} />
                     </Route>
                     <Route path='/Acompañamiento'>
                     <Snack/>
@@ -74,10 +90,10 @@ const card = () => {
               <a className="list-group-item list-group-item-action flex-column align-items-start">
                 <div className="d-flex w-100 justify-content-between">
                   <h5 className="mb-1">List group item heading</h5>
-                  <small className="text-muted">3 days ago</small>
+                  <small className="text-muted">NAMEEEEE {burgerTypeState} {burgerPriceState} {productList}</small>
                 </div>
-
-                <small className="text-muted">Donec id elit non mi porta.</small>
+                <p className="mb-1">TOTAL {total}</p>
+                <small className="text-muted">{}</small>
               </a>
               <div className="form-group">
                 <input type="text" className="form-control" placeholder="Nombre cliente" id="inputDefault" />
@@ -93,4 +109,4 @@ const card = () => {
     )
 }
 
-export default card
+export default Card
