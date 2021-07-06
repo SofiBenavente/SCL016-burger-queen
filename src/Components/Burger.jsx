@@ -33,7 +33,7 @@ const Burger = () => {
                         <button className = "burgers" style={{height:400, width: 300}} onClick = {() => burgerBtnFood()}>
                         {<img src = {item.images} style={{height:200, width: 250}}/>}
                           <p><b>{item.name}</b></p>
-                          <p1><i>{item.description}</i></p1>
+                          <p className="descriptionFood"><i>{item.description}</i></p>
                           <p>${item.price}</p>
                         </button>
                     </li>  

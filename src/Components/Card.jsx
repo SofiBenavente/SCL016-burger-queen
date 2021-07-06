@@ -3,6 +3,7 @@ import React from 'react';
 import Burger from './Burger'
 import Snack from './Snack'
 import Drinks from './Drinks'
+//import Order from './Order'
 
 import {
   BrowserRouter as Router,
@@ -75,7 +76,7 @@ const card = () => {
                   <h5 className="mb-1">List group item heading</h5>
                   <small className="text-muted">3 days ago</small>
                 </div>
-                <p className="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+
                 <small className="text-muted">Donec id elit non mi porta.</small>
               </a>
               <div className="form-group">
