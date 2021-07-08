@@ -1,11 +1,6 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 //import List from './List.jsx';
-import Burger from './Burger'
-import Snack from './Snack'
-import Drinks from './Drinks'
-//import Order from './Order'
-
-
+import Food from './Food.jsx'
 import {
   BrowserRouter as Router,
   Switch,
@@ -14,32 +9,9 @@ import {
 } from "react-router-dom";
 
 
-const Card = () => {
+const card = () => {
 
-const [burgerTypeState, setBurgerTypeState] = useState();
-const [burgerPriceState, setBurgerPriceState] = useState();
-const [productList, setProductList] = useState([]);
-const [totalList, setTotalList] = useState([]);
-const [finalPrice, setFinalPrice] = useState(0);
 
-useEffect(() => {
-  if (burgerTypeState != undefined) {
-    productList.push(burgerTypeState);
-    console.log(productList);
-  }
-
-  if (burgerPriceState != undefined) {
-    totalList.push(burgerPriceState);
-    const reducer = (accumulator, currentValue) => accumulator + currentValue;
-    setFinalPrice(totalList.reduce(reducer));
-    console.log(finalPrice);
-    console.log(totalList);
-  }
-
-  /*if(snakTypeState != undefined && snakPriceState != undefined) {
-    productList.push(snakTypeState);
-  }*/
-}, [burgerTypeState, burgerPriceState]);
 
     return (
      
@@ -61,7 +33,7 @@ useEffect(() => {
                   Acompañamiento
                   </Link>
                   
-                  <Link to='/Bebidas' className="btn btn-lg btn-primary bloc" type="button">
+                  <Link to='/Bebidas'className="btn btn-lg btn-primary bloc" type="button">
                   Bebidas
                   </Link>
 
@@ -71,13 +43,13 @@ useEffect(() => {
                 <div className="btn-group-vertical">
                   <Switch>
                     <Route path='/' exact>
-                      <Burger burgerTypeProp={setBurgerTypeState} burgerPriceProp={setBurgerPriceState} />
+                      {/*<List/>*/}
                     </Route>
                     <Route path='/Acompañamiento'>
-                    <Snack/>
+                      <h1>papitas y cositas pa picar</h1>
                     </Route>
                     <Route path='/Bebidas'>
-                      <Drinks/>
+                      <Food/>
                     </Route>
                   </Switch>
 
@@ -97,25 +69,11 @@ useEffect(() => {
               </div>
               <a className="list-group-item list-group-item-action flex-column align-items-start">
                 <div className="d-flex w-100 justify-content-between">
-                  <h5 className="mb-1">Items</h5>
-                  <small className="text-muted">
-
-                  <ul>
-                        {
-                        productList.map((item,i)=> (
-                            
-                            <li key={i}>              
-                                  <p>{`${item} ${totalList[i]}`}</p>
-                            </li>  
-                          
-                            ))
-                        }          
-                  </ul>
-
-                  </small>
+                  <h5 className="mb-1">List group item heading</h5>
+                  <small className="text-muted">3 days ago</small>
                 </div>
-                <p className="mb-1">TOTAL {finalPrice}</p>
-                <small className="text-muted">{}</small>
+                <p className="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                <small className="text-muted">Donec id elit non mi porta.</small>
               </a>
               <div className="form-group">
                 <input type="text" className="form-control" placeholder="Nombre cliente" id="inputDefault" />
@@ -131,4 +89,4 @@ useEffect(() => {
     )
 }
 
-export default Card
+export default card
